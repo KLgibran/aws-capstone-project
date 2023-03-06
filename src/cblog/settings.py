@@ -88,7 +88,7 @@ DATABASES = {
         'NAME': 'database1', # database name in RDS is written here
         'USER': 'admin', # database master username in RDS is written here
         'PASSWORD': config('PASSWORD'),
-        'HOST': 'aws-capstone-rds.cyj2vj87nrq2.us-east-1.rds.amazonaws.com',  # database endpoint is written here
+        'HOST': 'RDS_ENDPOINT',  # database endpoint is written here
         'PORT': '3306' # database port is written here
     }
 }
