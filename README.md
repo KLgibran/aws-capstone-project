@@ -41,7 +41,7 @@ Step 1: Create dedicated VPC and whole components
 
 	2. EC2 Security Groups
 	Name            : aws_capstone_EC2_Sec_Group
-	Description     : EC2 Security Groups only allows traffic coming from aws_capstone_ALB_Sec_Group Security Groups for HTTP and 	  HTTPS ports. In addition, ssh port is allowed from anywhere
+	Description     : EC2 Security Groups only allows traffic coming from aws_capstone_ALB_Sec_Group Security Groups for HTTP 	  and HTTPS ports. In addition, ssh port is allowed from anywhere
 	VPC             : AWS_Capstone_VPC
 	Inbound Rules
 	HTTP(80)    ----> aws_capstone_ALB_Sec_Group
@@ -413,7 +413,7 @@ Step 1: Create dedicated VPC and whole components
 
 		- click create records
 
-### Step 16: Create DynamoDB Table
+### Step 16: Create DynamoDB Table
 	Go to the Dynamo Db table and click create table button
 	- Create DynamoDB table
 	Name            : awscapstoneDynamo
@@ -422,7 +422,7 @@ Step 1: Create dedicated VPC and whole components
 	click create
 
 
-## Step 17-18: Create Lambda function
+### Step 17-18: Create Lambda function
 	Before we create our Lambda function, we should create IAM role that we'll use for Lambda function. Go to the IAM console and 	  select role on the left hand menu, then create role button
 	Select Lambda as trusted entity ---> click Next:Permission
 	Choose: - LambdaS3fullaccess, 
